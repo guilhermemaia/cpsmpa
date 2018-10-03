@@ -1,0 +1,29 @@
+div {
+    background-color: darkorange;
+    border-width: 3px;
+    border-color: black;
+    border-style: dotted;
+        }
+
+h1 {
+    font-family: fantasy;
+    color: aliceblue;
+}
+
+#p1 {
+    color: darkgoldenrod;
+}
+
+#p2 {
+    color: crimson;
+}
+
+#fundo1 {
+    color: cornflowerblue;
+}
+
+.alerta1 {
+    background-color: chartreuse;
+    margin-left: 150px;
+    margin-right: 150px;
+}
