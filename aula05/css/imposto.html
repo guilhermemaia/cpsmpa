@@ -1,0 +1,34 @@
+<html>
+
+    <head>
+
+        <title>
+        <meta charset="utf-8">
+            Javascript
+
+        </title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <h1>Imposto de Renda<h1/>
+        <br/>
+        <div id="IR"></div>    
+
+        <script>
+
+            var alicota5 = 0.275;
+            var totalReceita;
+            var irAPagar;
+            totalReceita = 10000;
+            irAPagar = totalReceita * alicota5;
+
+            document.getElementById("IR").innerHTML = irAPagar;
+
+
+        </script>
+        
+    </body>
+
+</html>
