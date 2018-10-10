@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 06 - Array, Loop For & Functions</title>
+</head>
+<body>
+    <h4>Estados do Sudeste</h4>
+    <div id="resultado"></div>
+    <div id="adcional-noturno"></div>
+    <div id="total-adcional-noturno"></div>
+    <script>
+        //Array é uma variável que contem vários valores do mesmo
+        //tipo categoria
+        var sudeste = ["SP", "RJ", "MG", "ES"];
+        console.log(sudeste);
+        
+        var texto = "";
+        var i;
+
+        //LOOP
+        //FOR
+        //Usando quando é necessário fazer várias tarefas repetidas
+        for (i=0; i<sudeste.length; i++) {
+            texto = texto + "Estado:" + sudeste[i] + " - " + getNomeDoEstado(sudeste[i]) + "<br>";
+        }
+
+        document.getElementById("resultado").innerHTML = texto;
+
+
+        // FUNCTION são funções que realizam cálculo ou ações que podem ser
+        // diferente dos programas
+
+        function getNomeDoEstado(sigla) {
+            if (sigla=="SP") {
+                return "São Paulo";
+            } else if (sigla=="RJ") {
+                return "Rio de Janeiro";
+            } else if (sigla=="MG") {
+                return "Minas Gerais";
+            } else if (sigla=="ES") {
+                return "Espirito Santo";
+            } else {
+                return "Não conheço esse estado";
+            }
+        }
+
+        //Adicional noturno
+
+        
+        function getAdcionalNoturno(valorHora) {
+                return (valorHora * 1.2);
+            }
+
+        document.getElementById("adcional-noturno").innerHTML = getAdcionalNoturno (180);
+
+
+        //Valor total de adcional noturno dependendo do número de horas noturnas trabalhadas
+
+        
+        function getTotalAdcionalNoturno(valorHora, numeroDeHoras) {
+                if (numeroDeHoras => 1) {
+                    return ((valorHora * 1.2)*numeroDeHoras);
+                } else {
+                    return 0;
+                }
+                
+            }
+        
+
+        document.getElementById("total-adcional-noturno").innerHTML = getTotalAdcionalNoturno (180, 5);
+        
+         
+
+    </script>
+</body>
+</html>
