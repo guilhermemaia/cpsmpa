@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora Java Script</title>
+</head>
+<body>
+    <h2>Escolha a operação desejada</h2>
+    <form name="tipo-de-operacao" id="tipo-de-operacao">
+        <input type="checkbox"  id="soma" value="soma"> soma <br>
+        <input type="checkbox" id="subtracao" value="subtracao"> subtração <br>
+        <input type="checkbox" id="multiplicacao" value="multiplicacao"> multiplicação <br>
+        <input type="checkbox" id="divisao" value="divisao"> divisão
+    </form>
+
+    <form name="variaveis" id="variaveis">
+        <input type="number" id="variavelA">
+        <div id="simbolo-da-operacao"></div>
+        <input type="number" id="variavelB">
+    </form>
+
+    <button onclick="calculo(); return false">Calcular</button>
+
+    <div id="resultado"></div>
+
+    <script src="script-e2.js"></script>
+</body>
+</html>

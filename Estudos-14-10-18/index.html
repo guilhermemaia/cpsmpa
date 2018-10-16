@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cálculo de 13º Salário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <h1>Cálculo de 13º Salário</h1> 
+
+<form action="#" id="d3Salario" name="d3Salario">
+    <div>
+        <label>Valor do salário:</label>
+        <input type="number" name="valorDoSalario" id="valorDoSalario">
+    </div>
+
+    <div>
+         <label>Mês que começou a trabalhar:</label>
+         <select name="comecouATrabalharEm" id="fatorDeConversao">
+                <option value="" selected></option>
+                <option value="12">Janeiro</option>
+                <option value="11">Fevereiro</option>
+                <option value="10">Março</option>
+                <option value="09">Abril</option>
+                <option value="08">Maio</option>
+                <option value="07">Junho</option>
+                <option value="06">Julho</option>
+                <option value="05">Agosto</option>
+                <option value="04">Setembro</option>
+                <option value="03">Outubro</option>
+                <option value="02">Novembro</option>
+                <option value="01">Dezembro</option>
+         </select>
+    </div>
+    <div id="divBotao">
+        <button onclick="getValorAPagarBruto(); return false"> calcular </button>
+    </div>
+
+</form>
+
+<div id="mostrarValorDePagamentoBruto"></div>
+<div id="mostrarValorDePagamentoINSS"></div>
+<div id="mostrarValorDePagamentoReceber"></div>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
